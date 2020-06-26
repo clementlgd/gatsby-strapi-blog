@@ -17,9 +17,8 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.DEPLOY_URL
-        ? "https://whentocop-back.herokuapp.com/"
+        ? "https://whentocop-back.herokuapp.com"
         : "http://localhost:1337",
-        // apiURL: "http://localhost:1337",
         contentTypes: [
           `drops`,
         ],

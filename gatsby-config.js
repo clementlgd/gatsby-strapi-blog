@@ -16,11 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: process.env.DEPLOY_URL
-        ? "https://whentocop-back.herokuapp.com"
-        : "http://localhost:1337",
+        // apiURL: process.env.DEPLOY_URL
+        // ? "https://whentocop-back.herokuapp.com"
+        // : "http://localhost:1337",
+        apiURL: "https://whentocop-back.herokuapp.com",
         contentTypes: [
           `drops`,
+          // `retaillers`,
         ],
         // loginData: {
         //   identifier: 'Clement',
